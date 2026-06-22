@@ -2,19 +2,19 @@
 <html lang="es" class="h-full">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/app/favicon.svg" />
-    <!-- Safari/iOS home-screen icon + browser chrome tint. PLACEHOLDER: reuses
-         the existing Qrema logo as a stopgap so the bookmark/home-screen icon
-         isn't blank on iOS (Safari ignores favicon.svg). The real branded
-         favicon/MindHub asset is pending from Alonso — swap qrema-logo.png and
-         the theme-color when it lands. -->
-    <link rel="apple-touch-icon" href="/app/qrema-logo.png" />
+    <!-- Branded Qrema favicon + home-screen icon set (the "Q" mark). Paths are
+         root-relative; Vite rewrites them to the / base at build time. -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#8B3218" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>MindLink</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/app/assets/index-CL6AK48v.js"></script>
-    <link rel="stylesheet" crossorigin href="/app/assets/index-DJtXnBnM.css">
+    <script type="module" crossorigin src="/assets/index-Q-LMxu93.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DpXww8ep.css">
   </head>
   <body class="h-full">
     <div id="root" class="h-full"></div>
