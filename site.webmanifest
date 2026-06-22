@@ -30,6 +30,6 @@
   "theme_color": "#8B3218",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "/app/",
-  "scope": "/app/"
+  "start_url": "/",
+  "scope": "/"
 }
