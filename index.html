@@ -11,14 +11,21 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#8B3218" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>MindLink</title>
+    <!-- Título inicial pre-bundle; App.jsx lo fija en runtime vía documentTitle()
+         ("MindHub - Qrema" dentro del producto, "MindHub" fuera). -->
+    <title>MindHub</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Login co-branded (TheMindFactory + Qrema): Hanken Grotesk + Space Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-DWhA_R6G.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CyD1soL7.css">
+    <script type="module" crossorigin src="/assets/index-BMVZgf0E.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CYaPEZbn.css">
   </head>
   <body class="h-full">
     <div id="root" class="h-full"></div>
+    <!-- Runtime feature overrides (window.__QREMA_FLAGS__). Classic blocking
+         script on purpose: it must run BEFORE the module bundle so featureFlags.js
+         resolves synchronously and the nav never flashes. Kept out of the bundle
+         (no hashed name) so it can be swapped on the VPS without a rebuild. -->
+    <script src="/features.js"></script>
   </body>
 </html>
